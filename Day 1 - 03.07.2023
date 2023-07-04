@@ -1,0 +1,81 @@
+C/C++
+QUESTION-1
+//JALAJ SINGHAL
+//HELLO WITH NAME
+#include<stdio.h>
+int main () {
+    char name;
+    printf("Enter the name: ");
+    scanf("%s",&name);
+    printf("Hello %s",&name);
+    return 0;
+}
+
+QUESTION-2
+//JALAJ SINGHAL
+//SUM OF 3 DIGIT NUMBER
+//03.07.2023
+#include<stdio.h>
+int main () {
+    int number, digit1, digit2, digit3, sum;
+    printf("Enter the number: ");
+    scanf("%d",&number);
+    digit1= number/100;
+    digit2= (number%100)/10;
+    digit3= number%10;
+    sum = digit1 + digit2 + digit3;
+    printf("The sum of 3 digit number is %d",sum);
+    return 0;
+}
+
+QUESTION-3
+//JALAJ SINGHAL
+//03.07.2023
+//SUM,DIFFERENCE,MULTIPLICATION,DIVISION
+#include <stdio.h>
+int main() {
+    int num1, num2;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    int sum = num1 + num2;
+    int difference = num1 - num2;
+    int multiplication = num1 * num2;
+    float division = (float) num1 / num2;
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+    printf("Multiplication: %d\n", multiplication);
+    printf("Division: %f\n", division);
+    return 0;
+}
+
+PYTHON
+QUESTION-1
+#JALAJ SINGHAL
+#ENTER YOUR NAME WITH HELLO
+#03.07.2023
+name = input("Enter your name: ")
+print("Hello " + name + "!")
+
+QUESTIO-02
+#JALAJ SINGHAL
+#ENTER YOUR NAME WITH HELLO IN INVERTED FORM
+#03.07.2023
+name = input("Enter your name: ")
+print("Hello " + name + "!")
+A = ("Hello " + name + "!")
+print(A[::-1])
+
+HTML
+<html>
+  <head>
+    <title> MY WEBPAGE </title>
+  </head>
+  <body>
+    <h1> WELCOME TO MY KINGDOM </h1>
+    <p> IT IS THE KINGDOM WHERE ALL THE PEOPLE LIVE PEACEFULLY </p>
+    <p> HERE EVERY BODY LIVES PEACEFULLY</p>
+    <img src = "JALAJ PIC.jpeg"
+  </body>
+</html>
