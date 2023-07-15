@@ -1,0 +1,140 @@
+C LANGUAGE
+//JALAJ SINGHAL
+//15.07.2023
+#include<stdio.h>
+void bubbleSort(int arr[], int n) 
+{
+    int i, j;
+    for(i = 0; i< n - 1; i++) 
+    {
+        for(j = 0; j < n - i - 1; j++) 
+        {
+            if(arr[j] > arr[j + 1]) 
+            {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+int main() 
+{
+    int arr[] = {44, 55, 91, 60, 48, 23};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int i;
+    printf("Array before sorting: ");
+    for(i = 0; i < n; i++) 
+    {
+        printf("%d",arr[i]);
+    }
+    printf("\n");
+    bubbleSort(arr, n);
+    printf("Array after sorting in ascending order: ");
+    for(i = 0; i < n; i++) 
+    {
+        printf("%d", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+//JALAJ SINGHAL
+//14.07.2023
+#include<stdio.h>
+typedef enum 
+{
+    Red,
+    Green,
+    Blue,
+    Yellow,
+    Purple
+} Colors;
+int main() 
+{
+    int favouriteColor;
+    printf("Enter your favourit color: \n");
+    printf("0 - Red\n");
+    printf("1 - Green\n");
+    printf("2 - Blue\n");
+    printf("3 - Yellow\n");
+    printf("4 - Purple\n");
+    scanf("%d",&favouriteColor);
+    switch (favouriteColor) 
+    {
+        case Red:
+            printf("Red is a vibrant color!\n");
+            break;
+        case Green:
+            printf("Green represents nature and freshness!\n");
+            break;
+        case Blue:
+            printf("Blue is calming and peaceful!\n");
+            break;
+        case Yellow:
+            printf("Yellow is bright and cheerful!\n");
+            break;
+        case Purple:
+            printf("Purple is associated with creativity and royalty!\n");
+            break;
+        default:
+            printf("Invalid color choice!\n");
+            break;
+    }
+
+    return 0;
+}
+
+PYTHON'#JALAJ SINGHAL
+#MATHS
+#14.07.2023
+try:
+    dividend = int(input("Enter the dividend: "))
+    divisor = int(input("Enter the divisor: "))
+    result = dividend / divisor
+    print("Result: ",result)
+
+except ZeroDivisonError:
+    print("Error: Divison not allowed")
+except ValueError: 
+    print("Error: Invalid input")
+
+#JALAJ SINGHAL
+#14.07.2023
+try:
+    filename = input("Enter the filename: ")
+    with open(filename, 'r') as file:
+        print(f"File '{filename}' opened successfully.")
+except FileNotFoundError:
+    print(f"Error: File '{filename}' not found.")
+except:
+    print("An error occurred while trying to open the file.")
+
+HTML
+<html>
+<head>
+  <title>Flexbox Layout</title>
+  <style>
+    /* Container div */
+    .container {
+      display: flex;
+    }
+    /* Child divs */
+    .child {
+      flex: 1;
+    }
+    .container .child:last-child {
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child">Child 1</div>
+    <div class="child">Child 2</div>
+    <div class="child">Child 3</div>
+  </div>
+</body>
+</html>
+
+    
